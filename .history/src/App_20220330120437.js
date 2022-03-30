@@ -8,28 +8,21 @@ function App() {
   const dispatch = useDispatch();
 
   const increment = () => {
-    dispatch(actions.increment());
+    dispatch(actions.increment);
   };
   const decrement = () => {
-    dispatch(actions.decrement());
+    dispatch(actions.decrement);
   };
   const addBy = () => {
-    dispatch(actions.addBy(10));
+    dispatch(actions.addBy);
   };
   return (
     <div className="App">
-      <h2>Counter App</h2>
-      <h2> {counter} </h2>
-      <button className="btn" onClick={increment}>
-        Increment
-      </button>
-      <button className="btn" onClick={decrement}>
-        Decrement
-      </button>
-      <button className="btn" onClick={addBy}>
-        {" "}
-        Add 10{" "}
-      </button>
+      <h1>Counter App</h1>
+      <h4> {counter} </h4>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={add}> Add Value </button>
     </div>
   );
 }
